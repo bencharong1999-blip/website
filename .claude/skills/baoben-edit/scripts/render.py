@@ -266,9 +266,9 @@ def picture_filter(shot, settings):
         # Upscale 2x before zoompan so the slow push does not jitter on integer pixels.
         graph += (f",scale={w * 2}:{h * 2},zoompan=z='1+0.05*on/{frames}':d=1:"
                   f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{h}:fps={fps}")
-    # Clone the last frame a little so every shot has exactly duration*fps frames after
-    # -frames:v trims it (fps/zoompan can come up a frame or two short at the tail).
-    graph += ",tpad=stop_mode=clone:stop_duration=0.2,format=yuv420p[v]"
+    # Clone the last frame so every shot has exactly duration*fps frames after -frames:v
+    # trims it, even when the source clip is shorter than the shot (plan_shots warns).
+    graph += f",tpad=stop_mode=clone:stop_duration={shot['duration']:.2f},format=yuv420p[v]"
     return graph
 
 
@@ -325,6 +325,13 @@ def plan_shots(root, project, settings, captions, memo):
         if ass is not None:
             cap_key = sha256_text(json.dumps([clean_key, ass, cap_look, fonts_dir(root)],
                                              sort_keys=True))[:16]
+        if os.path.splitext(src)[1].lower() not in IMAGE_EXTS:
+            src_len = float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                 "-of", "csv=p=0", src]).strip() or 0)
+            need = shot.get("source_start", 0) + shot["duration"]
+            if need > src_len + 0.02:
+                log(f"WARN {shot['id']}: needs {need:.2f}s of {shot['source']} but it is "
+                    f"{src_len:.2f}s long — the last frame will be held")
         sid = shot["id"]
         plan.append({
             "shot": shot,
