@@ -27,3 +27,8 @@ footage, captions, delivery, results), do this before anything else:
 - Never post, delete files, change sharing, or buy services unless Ben says
   so explicitly. Never invent details of Ben's accident.
 - Talk with Ben in Thai.
+- Working as a pair with Claude: read section 7.10 of the Notion plan,
+  including the "สมุดส่งงาน Claude ↔ Codex" table, before starting. Answer
+  any request addressed to you there, and add a row before you stop.
+  Work meant for Ben should be reviewed by the other agent first, or marked
+  "ยังไม่ผ่านตรวจไขว้" (not yet cross-checked).
