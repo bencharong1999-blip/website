@@ -32,3 +32,7 @@ footage, captions, delivery, results), do this before anything else:
   any request addressed to you there, and add a row before you stop.
   Work meant for Ben should be reviewed by the other agent first, or marked
   "ยังไม่ผ่านตรวจไขว้" (not yet cross-checked).
+- Log progress after every step, not only at the end: add a row to the
+  handoff table saying which task, which step it reached, files/commit, and
+  the next step. Commit and push file work at each step too, so the other
+  agent can continue if you run out of quota mid-task.
