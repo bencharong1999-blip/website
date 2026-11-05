@@ -51,6 +51,8 @@ DEFAULTS = {
     "font_size": 92,
     "accent_ass": "&H0000FFFF&",
     "caption_position": [540, 1400],
+    "font_bold": -1,
+    "outline": 7,
 }
 
 # Fonts bundled with the skill, used when the project has no assets/fonts folder.
@@ -173,7 +175,7 @@ def caption_body(c, settings, static=False):
     text = ass_escape(c["text"])
     hl = ass_escape(c.get("highlight") or "")
     if hl and hl in text:
-        accent = settings["accent_ass"]
+        accent = c.get("accent") or settings["accent_ass"]
         text = text.replace(hl, "{\\c" + accent + "}" + hl + "{\\c&H00FFFFFF&}", 1)
     # Optional per-caption overrides: "pos" [x, y] (e.g. a title at the top) and "size".
     x, y = c.get("pos") or settings["caption_position"]
@@ -182,6 +184,9 @@ def caption_body(c, settings, static=False):
     motion = c.get("motion", "pop")
     if static:
         tags = f"{{\\an5\\pos({x},{y})}}"
+    elif motion == "slam":
+        # Hook text: lands big and fast, like a punch (used for giant hook words).
+        tags = f"{{\\an5\\pos({x},{y})\\fscx185\\fscy185\\t(0,110,\\fscx100\\fscy100)\\fad(0,60)}}"
     elif motion == "soft":
         tags = f"{{\\an5\\pos({x},{y})\\fad(180,120)}}"
     else:
@@ -193,7 +198,8 @@ def ass_document(settings, events):
     """Return a complete ASS file for the given (start, end, body) events."""
     w, h = settings["width"], settings["height"]
     style = (f"Style: Main,{settings['font']},{settings['font_size']},&H00FFFFFF,&H0000FFFF,"
-             "&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,60,1")
+             f"&H00000000,&H64000000,{settings['font_bold']},0,0,0,100,100,0,0,1,"
+             f"{settings['outline']},3,5,60,60,60,1")
     lines = ["[Script Info]", "ScriptType: v4.00+", f"PlayResX: {w}", f"PlayResY: {h}",
              "WrapStyle: 2", "ScaledBorderAndShadow: yes", "", "[V4+ Styles]",
              "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
@@ -252,6 +258,9 @@ def picture_filter(shot, settings):
         graph += (f"[in]scale={w}:{h}:force_original_aspect_ratio=increase{matrix},"
                   f"crop={w}:{h},setsar=1")
     graph += f",fps={fps}"
+    if shot.get("look"):
+        # Extra grade for this shot, e.g. "eq=brightness=-0.1:saturation=0.6" for a darker hook.
+        graph += "," + shot["look"]
     if shot.get("gentle_push"):
         frames = max(1, int(round(shot["duration"] * fps)))
         # Upscale 2x before zoompan so the slow push does not jitter on integer pixels.
@@ -301,13 +310,13 @@ def plan_shots(root, project, settings, captions, memo):
     """Work out cache paths and keys for every shot's clean and captioned layer."""
     plan = []
     look = {k: settings[k] for k in ("width", "height", "fps", "crf_clean", "preset")}
-    cap_look = {k: settings[k] for k in ("font", "font_size", "accent_ass",
+    cap_look = {k: settings[k] for k in ("font", "font_size", "accent_ass", "font_bold", "outline",
                                          "caption_position", "crf_captioned", "preset")}
     for shot in project["shots"]:
         src = os.path.join(root, shot["source"])
         if not os.path.exists(src):
             raise FileNotFoundError(f"{shot['id']}: source not found: {shot['source']}")
-        spec = {k: shot.get(k) for k in ("source_start", "duration", "blur_fill", "blur_boxes",
+        spec = {k: shot.get(k) for k in ("source_start", "duration", "blur_fill", "blur_boxes", "look",
                                          "gentle_push", "color")}
         clean_key = sha256_text(json.dumps([RECIPE_VERSION, file_fingerprint(src, memo),
                                             spec, look], sort_keys=True))[:16]
