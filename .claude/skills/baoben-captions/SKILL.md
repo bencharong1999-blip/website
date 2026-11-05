@@ -25,3 +25,15 @@ description: ถอดเสียงไทย/อีสานของเบน
 ## หมายเหตุ CapCut
 
 SRT นำเข้าได้บน CapCut Desktop/Web แต่แอปมือถือนำเข้าตรงไม่ได้ — ถ้าเบนจะแก้เองบน iPhone ให้ใช้ไฟล์ clean + Auto Captions
+
+## ถอดเสียงไทยโดยไม่ต้องใช้ huggingface.co (ทดสอบจริง 5 พ.ย. 2026)
+
+เครื่อง Claude Code ถูกบล็อก huggingface.co แต่ดาวน์โหลดจาก GitHub ได้ → ใช้ Whisper small (int8) ของ sherpa-onnx จาก GitHub releases
+```bash
+pip install sherpa-onnx numpy
+python3 .claude/skills/baoben-captions/scripts/asr.py setup --models <โฟลเดอร์โมเดล>      # ~640 MB ครั้งเดียวต่อเครื่อง
+python3 .claude/skills/baoben-captions/scripts/asr.py run --models <โฟลเดอร์โมเดล> <ไฟล์> -o asr.json --srt asr.srt
+```
+- ผลทดสอบ: IMG_3640 (เบนพูดปิดท้าย 109 วิ) ถอดได้อ่านรู้เรื่องกว่าผล faster-whisper เดิม เร็วประมาณเท่าเวลาจริงบน CPU
+- ยังเป็น ASR ดิบ: ชื่อคน คำอีสาน ตัวเลข และพยางค์ท้าย ("ครับ") อาจผิด ต้องตรวจก่อนใช้เป็นซับหรือคำอ้าง
+- ดึงไฟล์จาก Drive: เครื่องมือ Drive ดาวน์โหลดได้ไม่เกิน 256 MB ต่อไฟล์ (ผลถูกบันทึกเป็นไฟล์ JSON base64 แล้วถอดด้วย python) ไฟล์ใหญ่กว่านี้ต้องให้เบนส่งสำเนาเล็ก
