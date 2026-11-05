@@ -175,7 +175,10 @@ def caption_body(c, settings, static=False):
     if hl and hl in text:
         accent = settings["accent_ass"]
         text = text.replace(hl, "{\\c" + accent + "}" + hl + "{\\c&H00FFFFFF&}", 1)
-    x, y = settings["caption_position"]
+    # Optional per-caption overrides: "pos" [x, y] (e.g. a title at the top) and "size".
+    x, y = c.get("pos") or settings["caption_position"]
+    if c.get("size"):
+        text = "{\\fs" + str(int(c["size"])) + "}" + text
     motion = c.get("motion", "pop")
     if static:
         tags = f"{{\\an5\\pos({x},{y})}}"

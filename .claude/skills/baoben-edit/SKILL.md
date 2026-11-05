@@ -64,3 +64,13 @@ description: ตัดต่อคลิปบ่าวเบนด้วย ffm
 - ไม่โคลนเสียงหรือเรนเดอร์ยาวทั้งชุดล่วงหน้าก่อนเบนตรวจตัวอย่าง
 - ไม่ใช้เพลง/ภาพที่ไม่รู้สิทธิ์ บันทึกแหล่งที่มาทุกครั้ง
 - ถ้ารันตัดต่อไม่ได้ ส่งลำดับทำต่อใน CapCut แทน และบอกว่ายังไม่มี MP4
+
+## ต่อเสียงจริงของเบนจากคลิปเล่าเรื่อง (ทำ EP02 ตัวอย่าง 5 พ.ย. 2026)
+
+1. ถอดเสียงด้วย `baoben-captions/scripts/asr.py` แล้วเลือกประโยคพร้อมเวลา
+2. เขียน cut list (src, in, out, gap, text, highlight) → `scripts/narration.py cuts.json -o assets/audio/voice_raw.wav --captions text/captions.json --timeline timeline.json`
+3. **ตรวจจุดตัด:** ถอดเสียงไฟล์ที่ต่อแล้วซ้ำ และดูความดังทีละ 20 มิลลิวินาทีหาช่องเงียบระหว่างคำ (Whisper มักตัดพยางค์ท้าย อย่าเชื่อเวลา ASR อย่างเดียว)
+4. `scripts/voice.py clean voice_raw.wav -o voice.wav` แล้วให้ project.json `audio.mix` ชี้ไฟล์นี้
+5. รูปนิ่งใช้เป็นช็อตได้ (`source` เป็น .jpg) · รูปแนวนอนใส่ `blur_fill: true` · สายรัดข้อมือ/ป้ายชื่อผู้ป่วยใส่ `blur_boxes` [x, y, w, h] เป็นสัดส่วนของรูปต้นฉบับ · หัวเรื่องด้านบนใส่ caption ที่มี `pos` และ `size`
+6. ฟอนต์ EP01: Noto Sans Thai Bold (OFL) อยู่ใน `fonts/` แล้ว คัดลอกเข้า `assets/fonts/` ของโปรเจกต์
+7. ห้ามใส่ไฟล์เสียง/บท/รูปของเบนใน repo นี้ (repo เป็นสาธารณะ) เก็บใน Drive
