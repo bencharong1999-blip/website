@@ -27,13 +27,21 @@ description: ตัดต่อคลิปบ่าวเบนด้วย ffm
    exports/
    ```
    แก้จุดเดียว → แก้ JSON แล้วเรนเดอร์เฉพาะช็อตที่ได้รับผล ใช้แคชส่วนที่เหลือ
-3. **ต่อเสียงพูด**: ตัดช่วงจากเทกที่เลือก ต่อด้วย crossfade สั้น (~0.06 วิ) เช่น `acrossfade=d=0.06`
-4. **ภาพ**: แต่ละช็อต `scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=60,format=yuv420p`
-5. **ข้อความไทย**: ใช้ ASS ผ่าน `ass=` (libass จัดสระ/วรรณยุกต์ไทยถูก) ฟอนต์ Kanit Bold (OFL, ใบอนุญาต `fonts/OFL.txt`) อยู่ในสกิลแล้ว — `ass=subs.ass:fontsdir=.claude/skills/baoben-edit/fonts` แม่แบบสไตล์ขาว-เหลือง ขอบดำ pop อยู่ที่ `caption-style.ass` (ทดสอบเรนเดอร์ 1080×1920 แล้ว สระ/วรรณยุกต์ถูก)
-6. **มิกซ์เสียง**: ดนตรี `sidechaincompress` หรือลด ~-18 dB ใต้เสียงพูด แล้ว `loudnorm=I=-16:TP=-1.5:LRA=11` (สองรอบถ้าต้องแม่น)
-7. **ส่งออก**: `-c:v libx264 -preset medium -crf 18 -r 60 -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:a aac -b:a 192k -ar 48000 -movflags +faststart`
+3. **เตรียมเสียงพูดจากแอปบันทึกเสียง iPhone (ทดสอบแล้ว 5 พ.ย. 2026)**:
+   ```bash
+   python3 .claude/skills/baoben-edit/scripts/voice.py report <เสียง.m4a> -o voice_report.json   # หาช่วงพูด/ช่วงหยุดพร้อมเวลา → เลือกเทก/ประโยคที่พูดใหม่
+   python3 .claude/skills/baoben-edit/scripts/voice.py clean  <เสียง.m4a> -o voice.wav --preview 10  # ตัดเสียงต่ำ 80 Hz + ลดเสียงรบกวน RNNoise + ปรับดัง -16 LUFS สองรอบ
+   ```
+   `--preview` สร้างไฟล์ฟัง A/B (ต้นฉบับ→หลังล้าง) ให้เบนฟังก่อนใช้ ถ้าเสียงพูดฟังแปลก/ขาด ลด `--mix 0.5` หรือ `--no-denoise` ไม่แก้ต้นฉบับ
+   ผลทดสอบเสียงสังเคราะห์ (โทน + เสียงซ่า): SNR 24 → 37 dB, ดัง -16.0 LUFS, หาช่วงพูด 3 ช่วงตรงเวลา; ยังไม่ได้ทดสอบกับเสียงเบนจริง ไม่รับรองว่ากู้คำที่ลมกลบได้
+   โมเดล `models/std.rnnn` (Xiph RNNoise, BSD-3) แหล่งและแฮชใน `models/README.md`
+4. **ต่อเสียงพูด**: ตัดช่วงจากเทกที่เลือก ต่อด้วย crossfade สั้น (~0.06 วิ) เช่น `acrossfade=d=0.06`
+5. **ภาพ**: แต่ละช็อต `scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=60,format=yuv420p`
+6. **ข้อความไทย**: ใช้ ASS ผ่าน `ass=` (libass จัดสระ/วรรณยุกต์ไทยถูก) ฟอนต์ Kanit Bold (OFL, ใบอนุญาต `fonts/OFL.txt`) อยู่ในสกิลแล้ว — `ass=subs.ass:fontsdir=.claude/skills/baoben-edit/fonts` แม่แบบสไตล์ขาว-เหลือง ขอบดำ pop อยู่ที่ `caption-style.ass` (ทดสอบเรนเดอร์ 1080×1920 แล้ว สระ/วรรณยุกต์ถูก)
+7. **มิกซ์เสียง**: ดนตรี `sidechaincompress` หรือลด ~-18 dB ใต้เสียงพูด แล้ว `loudnorm=I=-16:TP=-1.5:LRA=11` (สองรอบถ้าต้องแม่น)
+8. **ส่งออก**: `-c:v libx264 -preset medium -crf 18 -r 60 -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:a aac -b:a 192k -ar 48000 -movflags +faststart`
    ส่ง 3 ไฟล์ที่ใช้ฉบับตัดเดียวกัน: มีข้อความ · clean ไม่มีข้อความ · `.srt`
-8. ส่งต่อ `baoben-qc` ตรวจก่อนบอกเบน
+9. ส่งต่อ `baoben-qc` ตรวจก่อนบอกเบน
 
 ## แก้เฉพาะจุด
 

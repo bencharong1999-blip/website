@@ -39,3 +39,9 @@ footage, captions, delivery, results), do this before anything else:
   handoff table saying which task, which step it reached, files/commit, and
   the next step. Commit and push file work at each step too, so the other
   agent can continue if you run out of quota mid-task.
+- Team split with Claude (what each does best, tools added and their tests):
+  `.claude/baoben/team.md`. Codex leads code-heavy work (render pipeline from
+  project.json with cache, script fixes, Whisper transcription where models
+  can be downloaded); Claude leads Thai script, Notion/Drive/Metricool,
+  shot selection and QC. Either can do any step when the other is out of
+  quota.
