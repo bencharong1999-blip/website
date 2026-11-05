@@ -61,6 +61,12 @@ SKILL_FONTS = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "fo
 # Timing slack (seconds) when checking that shots butt together without gaps.
 TIMING_TOLERANCE = 0.011
 
+# Widest a caption line may be (px of the 1080 frame) before its font is shrunk to fit.
+MAX_LINE_PX = 960
+
+# Rough advance width of one Thai/Latin base character, as a fraction of the font size.
+CHAR_WIDTH = 0.40
+
 # Still-image extensions: these sources are looped for the shot's duration.
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
@@ -166,6 +172,19 @@ def ass_escape(text):
             .replace("\n", "\\N"))
 
 
+def fit_size(raw, size):
+    """Shrink the font size so the longest line stays inside MAX_LINE_PX.
+
+    Thai vowel and tone marks (Unicode category Mn) sit above/below the base letter
+    and take no width, so only base characters are counted.
+    """
+    import unicodedata
+    lines = raw.replace("\\n", "\n").split("\n")
+    widest = max(sum(1 for ch in ln if unicodedata.category(ch) != "Mn") for ln in lines)
+    est = widest * size * CHAR_WIDTH
+    return size if est <= MAX_LINE_PX else max(40, int(size * MAX_LINE_PX / est))
+
+
 def caption_body(c, settings, static=False):
     """Build the ASS dialogue text for one caption: motion tags + highlighted words.
 
@@ -179,8 +198,9 @@ def caption_body(c, settings, static=False):
         text = text.replace(hl, "{\\c" + accent + "}" + hl + "{\\c&H00FFFFFF&}", 1)
     # Optional per-caption overrides: "pos" [x, y] (e.g. a title at the top) and "size".
     x, y = c.get("pos") or settings["caption_position"]
-    if c.get("size"):
-        text = "{\\fs" + str(int(c["size"])) + "}" + text
+    size = fit_size(c["text"], int(c.get("size") or settings["font_size"]))
+    if size != settings["font_size"]:
+        text = "{\\fs" + str(size) + "}" + text
     motion = c.get("motion", "pop")
     if static:
         tags = f"{{\\an5\\pos({x},{y})}}"
