@@ -29,7 +29,7 @@ description: ตัดต่อคลิปบ่าวเบนด้วย ffm
    แก้จุดเดียว → แก้ JSON แล้วเรนเดอร์เฉพาะช็อตที่ได้รับผล ใช้แคชส่วนที่เหลือ
 3. **ต่อเสียงพูด**: ตัดช่วงจากเทกที่เลือก ต่อด้วย crossfade สั้น (~0.06 วิ) เช่น `acrossfade=d=0.06`
 4. **ภาพ**: แต่ละช็อต `scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=60,format=yuv420p`
-5. **ข้อความไทย**: ใช้ ASS ผ่าน `subtitles=`/`ass=` (libass จัดสระ/วรรณยุกต์ไทยถูก) ต้องมีฟอนต์ไทย — ถ้าเครื่องไม่มี ดาวน์โหลด Noto Sans Thai หรือ Kanit (OFL) จาก Google Fonts ใส่ `fonts/` แล้วใช้ `fontsdir=fonts` บันทึกแหล่ง/ใบอนุญาตฟอนต์
+5. **ข้อความไทย**: ใช้ ASS ผ่าน `ass=` (libass จัดสระ/วรรณยุกต์ไทยถูก) ฟอนต์ Kanit Bold (OFL, ใบอนุญาต `fonts/OFL.txt`) อยู่ในสกิลแล้ว — `ass=subs.ass:fontsdir=.claude/skills/baoben-edit/fonts` แม่แบบสไตล์ขาว-เหลือง ขอบดำ pop อยู่ที่ `caption-style.ass` (ทดสอบเรนเดอร์ 1080×1920 แล้ว สระ/วรรณยุกต์ถูก)
 6. **มิกซ์เสียง**: ดนตรี `sidechaincompress` หรือลด ~-18 dB ใต้เสียงพูด แล้ว `loudnorm=I=-16:TP=-1.5:LRA=11` (สองรอบถ้าต้องแม่น)
 7. **ส่งออก**: `-c:v libx264 -preset medium -crf 18 -r 60 -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:a aac -b:a 192k -ar 48000 -movflags +faststart`
    ส่ง 3 ไฟล์ที่ใช้ฉบับตัดเดียวกัน: มีข้อความ · clean ไม่มีข้อความ · `.srt`
