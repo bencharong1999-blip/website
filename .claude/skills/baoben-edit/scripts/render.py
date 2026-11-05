@@ -36,7 +36,7 @@ import sys
 import time
 
 # Bump when the ffmpeg recipe changes so old cache entries are not reused by mistake.
-RECIPE_VERSION = "render-2"
+RECIPE_VERSION = "render-3"
 
 # Defaults agreed with Ben (baoben-edit skill); project.json values override them.
 DEFAULTS = {
@@ -58,6 +58,9 @@ SKILL_FONTS = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "fo
 
 # Timing slack (seconds) when checking that shots butt together without gaps.
 TIMING_TOLERANCE = 0.011
+
+# Still-image extensions: these sources are looped for the shot's duration.
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 # Colour metadata values that mean the source is BT.601 and must be converted to BT.709.
 BT601_SPACES = {"smpte170m", "bt470bg", "bt601"}
@@ -235,15 +238,16 @@ def picture_filter(shot, settings):
     matrix = ""
     if color.get("color_space") in BT601_SPACES:
         matrix = ":in_color_matrix=bt601:out_color_matrix=bt709"
+    graph = privacy_blur(shot.get("blur_boxes") or [])
     if shot.get("blur_fill"):
-        graph = (f"[0:v]setsar=1,split=2[bgsrc][fgsrc];"
+        graph += (f"[in]setsar=1,split=2[bgsrc][fgsrc];"
                  f"[bgsrc]scale={w // 4}:{h // 4}:force_original_aspect_ratio=increase{matrix},"
                  f"crop={w // 4}:{h // 4},gblur=sigma=12,scale={w}:{h},eq=brightness=-0.06[bg];"
                  f"[fgsrc]scale={w}:{h}:force_original_aspect_ratio=decrease{matrix}[fg];"
                  f"[bg][fg]overlay=(W-w)/2:(H-h)/2,setsar=1")
     else:
-        graph = (f"[0:v]scale={w}:{h}:force_original_aspect_ratio=increase{matrix},"
-                 f"crop={w}:{h},setsar=1")
+        graph += (f"[in]scale={w}:{h}:force_original_aspect_ratio=increase{matrix},"
+                  f"crop={w}:{h},setsar=1")
     graph += f",fps={fps}"
     if shot.get("gentle_push"):
         frames = max(1, int(round(shot["duration"] * fps)))
@@ -254,6 +258,23 @@ def picture_filter(shot, settings):
     # -frames:v trims it (fps/zoompan can come up a frame or two short at the tail).
     graph += ",tpad=stop_mode=clone:stop_duration=0.2,format=yuv420p[v]"
     return graph
+
+
+def privacy_blur(boxes):
+    """Return a filter prefix that blurs [x, y, w, h] boxes (fractions of the source frame).
+
+    Used to hide patient wristbands, name tags or screens before any scaling, so the
+    blur follows the picture through crops and pushes. Output label is [in].
+    """
+    if not boxes:
+        return "[0:v]null[in];"
+    graph, last = "", "0:v"
+    for i, (x, y, bw, bh) in enumerate(boxes):
+        graph += (f"[{last}]split=2[m{i}][c{i}];"
+                  f"[c{i}]crop=iw*{bw}:ih*{bh}:iw*{x}:ih*{y},boxblur=luma_radius=24:luma_power=3[b{i}];"
+                  f"[m{i}][b{i}]overlay=W*{x}:H*{y}[o{i}];")
+        last = f"o{i}"
+    return graph + f"[{last}]null[in];"
 
 
 def encode_args(settings, crf):
@@ -283,7 +304,7 @@ def plan_shots(root, project, settings, captions, memo):
         src = os.path.join(root, shot["source"])
         if not os.path.exists(src):
             raise FileNotFoundError(f"{shot['id']}: source not found: {shot['source']}")
-        spec = {k: shot.get(k) for k in ("source_start", "duration", "blur_fill",
+        spec = {k: shot.get(k) for k in ("source_start", "duration", "blur_fill", "blur_boxes",
                                          "gentle_push", "color")}
         clean_key = sha256_text(json.dumps([RECIPE_VERSION, file_fingerprint(src, memo),
                                             spec, look], sort_keys=True))[:16]
@@ -310,8 +331,14 @@ def render_clean(item, settings):
     shot = item["shot"]
     tmp = item["clean"] + ".part.mp4"
     os.makedirs(os.path.dirname(item["clean"]), exist_ok=True)
-    run(["ffmpeg", "-hide_banner", "-y", "-ss", str(shot["source_start"]),
-         "-t", str(shot["duration"]), "-i", item["src"],
+    if os.path.splitext(item["src"])[1].lower() in IMAGE_EXTS:
+        # A still photo: loop it at the target frame rate for the shot's duration.
+        source_args = ["-loop", "1", "-framerate", str(settings["fps"]),
+                       "-t", str(shot["duration"]), "-i", item["src"]]
+    else:
+        source_args = ["-ss", str(shot.get("source_start", 0)),
+                       "-t", str(shot["duration"]), "-i", item["src"]]
+    run(["ffmpeg", "-hide_banner", "-y", *source_args,
          "-filter_complex", picture_filter(shot, settings), "-map", "[v]",
          "-frames:v", str(int(round(shot["duration"] * settings["fps"]))),
          *encode_args(settings, settings["crf_clean"]), tmp])
