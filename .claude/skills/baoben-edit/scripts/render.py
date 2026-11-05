@@ -185,11 +185,12 @@ def fit_size(raw, size):
     return size if est <= MAX_LINE_PX else max(40, int(size * MAX_LINE_PX / est))
 
 
-def caption_body(c, settings, static=False):
+def caption_body(c, settings, static=False, cont=False):
     """Build the ASS dialogue text for one caption: motion tags + highlighted words.
 
     static=True drops the entry animation, used when a caption continues across a cut
-    so it does not pop in a second time on the next shot.
+    so it does not pop in a second time on the next shot. cont=True drops the fade-out
+    because the caption carries on into the next shot (otherwise it blinks at the cut).
     """
     text = ass_escape(c["text"])
     hl = ass_escape(c.get("highlight") or "")
@@ -206,11 +207,11 @@ def caption_body(c, settings, static=False):
         tags = f"{{\\an5\\pos({x},{y})}}"
     elif motion == "slam":
         # Hook text: lands big and fast, like a punch (used for giant hook words).
-        tags = f"{{\\an5\\pos({x},{y})\\fscx185\\fscy185\\t(0,110,\\fscx100\\fscy100)\\fad(0,60)}}"
+        tags = f"{{\\an5\\pos({x},{y})\\fscx185\\fscy185\\t(0,110,\\fscx100\\fscy100)\\fad(0,{0 if cont else 60})}}"
     elif motion == "soft":
-        tags = f"{{\\an5\\pos({x},{y})\\fad(180,120)}}"
+        tags = f"{{\\an5\\pos({x},{y})\\fad(180,{0 if cont else 120})}}"
     else:
-        tags = f"{{\\an5\\pos({x},{y})\\fscx82\\fscy82\\t(0,140,\\fscx100\\fscy100)\\fad(40,80)}}"
+        tags = f"{{\\an5\\pos({x},{y})\\fscx82\\fscy82\\t(0,140,\\fscx100\\fscy100)\\fad(40,{0 if cont else 80})}}"
     return tags + text
 
 
@@ -254,7 +255,7 @@ def shot_ass(shot, settings, captions):
             continue
         carried = c["start"] < t0
         events.append((max(0.0, c["start"] - t0), min(c["end"], t1) - t0,
-                       caption_body(c, settings, static=carried)))
+                       caption_body(c, settings, static=carried, cont=c["end"] > t1 + 0.001)))
     if not events:
         return None
     return ass_document(settings, events)
