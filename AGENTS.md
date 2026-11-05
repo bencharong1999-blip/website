@@ -9,3 +9,21 @@
 ## Code Style
 
 - All functions and top-level constants should be documented with comments
+
+## Project บ่าวเบน อยากเป็นไทบ้าน (content work, not the website)
+
+When a task is about Ben's channel "บ่าวเบน อยากเป็นไทบ้าน" (clips, scripts,
+footage, captions, delivery, results), do this before anything else:
+
+- Read `.claude/skills/baoben-start/SKILL.md` first, then the skill that fits
+  the task (`baoben-script`, `baoben-footage`, `baoben-edit`,
+  `baoben-captions`, `baoben-qc`, `baoben-results`). They hold Ben's rules.
+- The live status is the Notion page "บ่าวเบน อยากเป็นไทบ้าน — แผนหลักและงานทั้งหมด"
+  (https://app.notion.com/p/40b52d4a2f43818d8e8ccf778995100f). If Notion is
+  not connected, say so and work only from what Ben gives you.
+- Handoff with Claude: before stopping, commit and push to the current branch
+  and write in the Notion plan (or in your reply for Ben to paste) what was
+  done, what was checked, file locations, and the next step.
+- Never post, delete files, change sharing, or buy services unless Ben says
+  so explicitly. Never invent details of Ben's accident.
+- Talk with Ben in Thai.
