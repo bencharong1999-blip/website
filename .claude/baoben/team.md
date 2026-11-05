@@ -27,6 +27,7 @@
 | เครื่องมือ | ที่อยู่ | แหล่ง / ใบอนุญาต | ผลทดสอบ |
 | --- | --- | --- | --- |
 | แยกช็อต + ป้ายมืด/เบลอ + ภาพรวม | `.claude/skills/baoben-footage/scripts/scenes.py` | PySceneDetect 0.6.4 จาก PyPI (BSD-3) | 3/3 ช็อตถูก ป้ายมืด/เบลอถูกช็อต |
+| เรนเดอร์จาก project.json + แคชรายช็อต | `.claude/skills/baoben-edit/scripts/render.py` | เขียนใหม่ (ffmpeg + libass) อ่าน schema เดียวกับ EP01 v02 | 3 ช็อต 450/450 เฟรม, แก้ซับ → เรนเดอร์ใหม่ 1 ช็อต; ยังไม่ทดสอบกับฟุตเทจจริง |
 | หาช่วงพูด/หยุด · ลดเสียงรบกวน · ปรับดัง | `.claude/skills/baoben-edit/scripts/voice.py` | ffmpeg arnndn + โมเดล std.rnnn (Xiph RNNoise, BSD-3) | SNR 24→37 dB, -16.0 LUFS, 3/3 ช่วงพูดตรงเวลา |
 
 ที่พิจารณาแล้วไม่เพิ่ม: ปลั๊กอินโพสต์/ตั้งเวลา (Posty, Ayrshare) — กติกาเบนห้ามโพสต์เองถ้าไม่สั่ง และ Metricool มีอยู่แล้ว · Remotion — ASS + ffmpeg ทำข้อความ pop ได้แล้ว ยังไม่จำเป็น · auto-editor — ใช้ ffmpeg silencedetect ใน voice.py แทน ไม่ต้องเพิ่ม dependency

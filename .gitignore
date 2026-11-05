@@ -40,3 +40,7 @@ next-env.d.ts
 
 # bun files
 bun.lockb
+
+# python bytecode
+__pycache__/
+*.pyc

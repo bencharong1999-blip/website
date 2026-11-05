@@ -27,6 +27,16 @@ description: ตัดต่อคลิปบ่าวเบนด้วย ffm
    exports/
    ```
    แก้จุดเดียว → แก้ JSON แล้วเรนเดอร์เฉพาะช็อตที่ได้รับผล ใช้แคชส่วนที่เหลือ
+   **เรนเดอร์ด้วย `scripts/render.py`** (อ่าน project.json schema 1 แบบเดียวกับแพ็กเกจ EP01 v02 — `shots[]` มี `source`, `source_start`, `duration`, `timeline_start`, `blur_fill`, `gentle_push`, `color`; `text/captions.json` มี `start`/`end`/`text`/`highlight`/`motion`):
+   ```bash
+   python3 .claude/skills/baoben-edit/scripts/render.py <โฟลเดอร์งาน> --dry-run        # ตรวจช่องว่าง/ซ้อนของช็อต ความยาวรวม ซับเกินภาพ + บอกช็อตไหนใช้แคช
+   python3 .claude/skills/baoben-edit/scripts/render.py <โฟลเดอร์งาน> --shots S01,S02  # ตัวอย่างเฉพาะช็อต → exports/preview.mp4 ให้เบนตรวจก่อน
+   python3 .claude/skills/baoben-edit/scripts/render.py <โฟลเดอร์งาน>                  # เรนเดอร์ส่วนที่เปลี่ยน + ต่อ master ด้วย -c copy + ใส่เสียง audio.mix
+   ```
+   ได้: `exports/picture_master.mp4` · `captioned_master.mp4` · `<code>_<version>_final.mp4` · `_clean.mp4` · `text/captions.ass/.srt` · `reports/render-jobs.json`
+   แคช: ช็อตสะอาดผูกกับไฟล์ต้นฉบับ+จุดตัด+ค่าภาพ ช็อตมีข้อความผูกกับซับที่ทับช็อตนั้น → แก้ข้อความ 1 ประโยค เรนเดอร์ใหม่แค่ช็อตเดียว
+   ฟอนต์: ใช้ `assets/fonts/` ของโปรเจกต์ถ้ามี ไม่มีใช้ Kanit ของสกิล · **EP01 v02 ใช้ "Noto Sans Thai" 84 สีเน้น `&H004CE7FF&`** (จาก project.json ใน Drive) ทำ EP ต่อเนื่องให้ใส่ค่าเดิมใน project.json
+   ทดสอบ 5 พ.ย. 2026 กับไฟล์สังเคราะห์ 3 ช็อต (1080×1920, 1080×1440 blur_fill+gentle_push, 720×1280 BT.601): ได้ 450/450 เฟรม 60fps BT.709 qc.py ผ่าน (ยกเว้นความดังเพราะเสียงทดสอบเบา) แก้ซับช็อตเดียว → เรนเดอร์ใหม่ 1 ช็อต · ยังไม่ได้รันกับฟุตเทจ EP01 จริง (ZIP 480 MB ใน Drive) และยังไม่ได้เทียบภาพกับ render_project.py เดิม
 3. **เตรียมเสียงพูดจากแอปบันทึกเสียง iPhone (ทดสอบแล้ว 5 พ.ย. 2026)**:
    ```bash
    python3 .claude/skills/baoben-edit/scripts/voice.py report <เสียง.m4a> -o voice_report.json   # หาช่วงพูด/ช่วงหยุดพร้อมเวลา → เลือกเทก/ประโยคที่พูดใหม่
