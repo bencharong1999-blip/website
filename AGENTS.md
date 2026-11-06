@@ -45,3 +45,5 @@ footage, captions, delivery, results), do this before anything else:
   can be downloaded); Claude leads Thai script, Notion/Drive/Metricool,
   shot selection and QC. Either can do any step when the other is out of
   quota.
+- Full clip pipeline from raw files to posting (tools, limits, lessons):
+  `.claude/baoben/workflow.md`. Posting via Metricool: `baoben-publish` skill.
