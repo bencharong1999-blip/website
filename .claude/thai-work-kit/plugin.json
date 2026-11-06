@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "bencharong1999@gmail.com",
+    "name": "เบญจรงค์ เย็นรัมย์"
+  },
+  "description": "ชุดสกิลไทบ้านคุณภาพพร้อมสคริปต์ตัดต่อ MP4, B-roll, motion และถอดเสียงทำซับไทย ควบคู่แผนงาน ผลลัพธ์ และ Notion",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "brandColor": "#DC2626",
+        "brandColorDark": "#EF4444",
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./assets/icon.png",
+        "composerIconDark": "./assets/icon.png",
+        "defaultPrompt": [
+          "ช่วยวางแผนงานนี้ พร้อมสรุปข้อมูลและร่างข้อความที่ต้องใช้",
+          "ปรับข้อความนี้ให้กระชับ ชัดเจน และเหมาะกับผู้อ่าน",
+          "สร้างบันทึกส่งต่องานนี้ให้ฉันนำไปใช้ในแชตใหม่"
+        ],
+        "developerName": "เบญจรงค์ เย็นรัมย์",
+        "displayName": "ชุดสกิลทำงาน",
+        "logo": "./assets/icon.png",
+        "logoDark": "./assets/icon.png",
+        "longDescription": "สกิลไทบ้านคุณภาพ 8 แบบ: วางแผน ร่างสคริปต์ วิเคราะห์ผล ตรวจงาน ส่งต่อบริบท ตัดต่อ MP4 ด้วยสคริปต์ FFmpeg และถอดเสียงทำซับไทยด้วย faster-whisper/PyThaiNLP มีสคริปต์ตัดช่วงเงียบ B-roll แบ่งจอ motion กราฟิกพื้นฐาน และส่งซับ SRT/ASS ใช้หน้าแผนหลักใน Notion ตามเดิม งานประมวลผลต้องมี Python, FFmpeg และส่วนเสริมที่เกี่ยวข้อง โมเดลเสียงดาวน์โหลดครั้งแรก ไม่มี face detection ไม่ควบคุม CapCut หรือโพสต์เอง และไม่ใช่ชุด PAN X BOXY เพิ่ม Watch สำหรับดูภาพฟุตเทจพร้อมเวลาในเครื่องก่อนคัดช็อต เก็บคลังสกิลสำรองโดยแยกจากตัวที่ติดตั้งจริง",
+        "shortDescription": "วางแผน สรุป เขียน ส่งต่องาน"
+      }
+    }
+  },
+  "name": "thai-work-kit",
+  "version": "0.7.2"
+}

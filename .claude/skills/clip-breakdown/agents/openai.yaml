@@ -1,0 +1,7 @@
+interface:
+  display_name: "แกะคลิปและโครงเรื่อง"
+  short_description: "วิเคราะห์ฮุกและเรื่องจากลิงก์หรือไฟล์ที่ตรวจได้"
+  default_prompt: "แกะคลิปนี้จากหลักฐานจริง แยกฮุก โครงเรื่อง จุดเปลี่ยน และวิธีนำไปใช้ พร้อมระบุส่วนที่ยังไม่ได้ดูหรือฟัง"
+policy:
+  allow_implicit_invocation: true
+  products: [CHAT, CODEX, HERMES]

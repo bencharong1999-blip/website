@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/bradautomates/claude-video",
+  "commit": "03ceb42f7fa2c4439aca01752118044baabffb8f",
+  "upstream_version": "0.3.2",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Bradley Bonanno",
+  "vendored": [
+    "scripts/*.py (upstream files)",
+    "LICENSE"
+  ],
+  "added": [
+    "Thai SKILL.md and agents/openai.yaml",
+    "scripts/review_local.py"
+  ],
+  "modified_upstream_scripts": [],
+  "defaults": "Thai entry point accepts local files and forces --engine local --no-whisper; no new paid/cloud path configured",
+  "untested": [
+    "URL and yt-dlp",
+    "Gemini/cloud ASR",
+    "WhisperX installation"
+  ],
+  "sha256": {
+    "scripts/config.py": "3f660c726d4fcfd1e3c6fbbea4097ae1768460e2b7ce78c5c603984dcf5d2385",
+    "scripts/download.py": "aa4a01ff7fb61e05d5c97941cb9113205bc7600626ec68a732332128bd9e4fbb",
+    "scripts/frames.py": "c41071f65baf39e043c8ad8bf6895adf351e4da9ef9ce2a6237fc9e456bb2309",
+    "scripts/gemini.py": "e0f29cdfc1f64b6535b6c01a6f21e33493abc240ab18aeac2c85f2f24d3c850e",
+    "scripts/local_whisperx.py": "123155ca69e188c44e2dcd1297c52558c477ae96be6238338f4f654c04b5e9cd",
+    "scripts/runtime.py": "70f9741d7b863380840da602f9311eb118572c33e083cfdea99524bd282eadbd",
+    "scripts/setup.py": "76d6f9e94918c01b8d9bb5210bb0e253ac96d3816e2db9e8a421248bd63eac9f",
+    "scripts/transcribe.py": "ceba832c36c0dd64cab8f3ef87d0a6dcc0472d8469c30dbc9e54f73028de4c3f",
+    "scripts/watch.py": "d6996d1afab2079ddd497fbbbde772f61fd86b5e71d93e6e8c55b9311cb4af94",
+    "scripts/whisper.py": "0ea4910e093dda680267a1e99e98ccdc8d541c9e2a314260f5db90b330145ed3"
+  }
+}

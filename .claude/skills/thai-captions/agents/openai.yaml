@@ -1,0 +1,7 @@
+interface:
+  display_name: "ถอดเสียงและซับไทย"
+  short_description: "ทำ SRT และเวลาคำจากเสียงจริง พร้อมจัดบรรทัดไทย"
+  default_prompt: "ถอดเสียงคลิปไทบ้านคุณภาพนี้ ทำซับไทย SRT และตรวจคำเฉพาะก่อนใส่ซับลงวิดีโอ"
+policy:
+  allow_implicit_invocation: true
+  products: [CHAT, CODEX, HERMES]

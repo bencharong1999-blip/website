@@ -1,0 +1,415 @@
+{
+  "source": "https://github.com/PiNocPie/thai-claude-skills",
+  "commit": "94b8377c142680c91873995c444c6f42b87c0f73",
+  "purpose": "Saved link index only; not installed or individually audited",
+  "entries": [
+    {
+      "name": "caption-writer-th",
+      "path": "skills/content/caption-writer-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/caption-writer-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "copy-editing-th",
+      "path": "skills/content/copy-editing-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/copy-editing-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "copywriting-th",
+      "path": "skills/content/copywriting-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/copywriting-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "hook-generator-th",
+      "path": "skills/content/hook-generator-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/hook-generator-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "linkedin-content-th",
+      "path": "skills/content/linkedin-content-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/linkedin-content-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "press-release-th",
+      "path": "skills/content/press-release-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/press-release-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "reel-editor-th",
+      "path": "skills/content/reel-editor-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/reel-editor-th/SKILL.md",
+      "status": "deferred_requires_mac_apple_silicon"
+    },
+    {
+      "name": "thread-writer-th",
+      "path": "skills/content/thread-writer-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/thread-writer-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "video-script-th",
+      "path": "skills/content/video-script-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/video-script-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "write-blog-th",
+      "path": "skills/content/write-blog-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/write-blog-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "write-landing-th",
+      "path": "skills/content/write-landing-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/write-landing-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "youtube-script-th",
+      "path": "skills/content/youtube-script-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/content/youtube-script-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "brand-guidelines-th",
+      "path": "skills/designer/brand-guidelines-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/designer/brand-guidelines-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "color-palette-th",
+      "path": "skills/designer/color-palette-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/designer/color-palette-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "design-audit-th",
+      "path": "skills/designer/design-audit-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/designer/design-audit-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "design-brief-th",
+      "path": "skills/designer/design-brief-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/designer/design-brief-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "figma-review-th",
+      "path": "skills/designer/figma-review-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/designer/figma-review-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "figma-to-code-th",
+      "path": "skills/designer/figma-to-code-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/designer/figma-to-code-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "presentation-design-th",
+      "path": "skills/designer/presentation-design-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/designer/presentation-design-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "business-case-th",
+      "path": "skills/hr-admin/business-case-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/business-case-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "docx-th",
+      "path": "skills/hr-admin/docx-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/docx-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "employee-handbook-th",
+      "path": "skills/hr-admin/employee-handbook-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/employee-handbook-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "interview-kit-th",
+      "path": "skills/hr-admin/interview-kit-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/interview-kit-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "jd-writer-th",
+      "path": "skills/hr-admin/jd-writer-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/jd-writer-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "meeting-minutes-th",
+      "path": "skills/hr-admin/meeting-minutes-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/meeting-minutes-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "onboarding-plan-th",
+      "path": "skills/hr-admin/onboarding-plan-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/onboarding-plan-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "performance-review-th",
+      "path": "skills/hr-admin/performance-review-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/performance-review-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "pptx-th",
+      "path": "skills/hr-admin/pptx-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/pptx-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "sop-writer-th",
+      "path": "skills/hr-admin/sop-writer-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/sop-writer-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "xlsx-th",
+      "path": "skills/hr-admin/xlsx-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/hr-admin/xlsx-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "competitor-analysis-th",
+      "path": "skills/marketing/competitor-analysis-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/competitor-analysis-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "content-calendar-th",
+      "path": "skills/marketing/content-calendar-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/content-calendar-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "email-sequence-th",
+      "path": "skills/marketing/email-sequence-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/email-sequence-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "email-subject-th",
+      "path": "skills/marketing/email-subject-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/email-subject-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "facebook-ads-th",
+      "path": "skills/marketing/facebook-ads-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/facebook-ads-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "google-ads-th",
+      "path": "skills/marketing/google-ads-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/google-ads-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "icp-builder-th",
+      "path": "skills/marketing/icp-builder-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/icp-builder-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "keyword-research-th",
+      "path": "skills/marketing/keyword-research-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/keyword-research-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "marketing-ideas-th",
+      "path": "skills/marketing/marketing-ideas-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/marketing-ideas-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "page-cro-th",
+      "path": "skills/marketing/page-cro-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/page-cro-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "seo-audit-th",
+      "path": "skills/marketing/seo-audit-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/seo-audit-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "social-content-th",
+      "path": "skills/marketing/social-content-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/marketing/social-content-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "daily-standup-th",
+      "path": "skills/productivity/daily-standup-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/productivity/daily-standup-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "email-professional-th",
+      "path": "skills/productivity/email-professional-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/productivity/email-professional-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "meeting-prep-th",
+      "path": "skills/productivity/meeting-prep-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/productivity/meeting-prep-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "okrs-th",
+      "path": "skills/productivity/okrs-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/productivity/okrs-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "postmortem-th",
+      "path": "skills/productivity/postmortem-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/productivity/postmortem-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "task-prioritize-th",
+      "path": "skills/productivity/task-prioritize-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/productivity/task-prioritize-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "weekly-review-th",
+      "path": "skills/productivity/weekly-review-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/productivity/weekly-review-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "cover-letter-th",
+      "path": "skills/student-career/cover-letter-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-career/cover-letter-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "interview-prep-th",
+      "path": "skills/student-career/interview-prep-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-career/interview-prep-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "linkedin-profile-th",
+      "path": "skills/student-career/linkedin-profile-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-career/linkedin-profile-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "portfolio-builder-th",
+      "path": "skills/student-career/portfolio-builder-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-career/portfolio-builder-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "resume-builder-th",
+      "path": "skills/student-career/resume-builder-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-career/resume-builder-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "salary-negotiation-th",
+      "path": "skills/student-career/salary-negotiation-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-career/salary-negotiation-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "citation-formatter-th",
+      "path": "skills/student-research/citation-formatter-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-research/citation-formatter-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "defense-prep-th",
+      "path": "skills/student-research/defense-prep-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-research/defense-prep-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "literature-review-th",
+      "path": "skills/student-research/literature-review-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-research/literature-review-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "methodology-th",
+      "path": "skills/student-research/methodology-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-research/methodology-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "paper-summary-th",
+      "path": "skills/student-research/paper-summary-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-research/paper-summary-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "research-question-th",
+      "path": "skills/student-research/research-question-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-research/research-question-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "thesis-outline-th",
+      "path": "skills/student-research/thesis-outline-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-research/thesis-outline-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "abstract-writer-th",
+      "path": "skills/student-writing/abstract-writer-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-writing/abstract-writer-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "essay-writer-th",
+      "path": "skills/student-writing/essay-writer-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-writing/essay-writer-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "exam-prep-th",
+      "path": "skills/student-writing/exam-prep-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-writing/exam-prep-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "lecture-notes-th",
+      "path": "skills/student-writing/lecture-notes-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-writing/lecture-notes-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "plagiarism-check-th",
+      "path": "skills/student-writing/plagiarism-check-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-writing/plagiarism-check-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    },
+    {
+      "name": "report-writer-th",
+      "path": "skills/student-writing/report-writer-th/SKILL.md",
+      "url": "https://github.com/PiNocPie/thai-claude-skills/blob/94b8377c142680c91873995c444c6f42b87c0f73/skills/student-writing/report-writer-th/SKILL.md",
+      "status": "not_individually_reviewed_not_installed"
+    }
+  ]
+}

@@ -1,0 +1,845 @@
+{
+  "exported_at": "2026-11-06",
+  "scope": "Skills visible in this session; not a history of all prior chats or projects",
+  "skills": [
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-build-my-engineering-wiki",
+      "name": "notion:notion-build-my-engineering-wiki",
+      "description": "Build a personalized Notion engineering home from technical docs, project context, and chat or connected sources. Use to get started with an engineering wiki and a clear view of current work.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-build-my-engineering-wiki/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-create-my-team-handbook",
+      "name": "notion:notion-create-my-team-handbook",
+      "description": "Create a team handbook in Notion from scattered processes, team documents, requests, and chat context. Make procedures easy to find, show who maintains them, and track related requests.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-create-my-team-handbook/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-database-designer",
+      "name": "notion:notion-database-designer",
+      "description": "Turns scattered notes and recurring work into useful Notion trackers for requests, content plans, or team work. Use to set up or improve a tracker, choosing its fields and views from the user's needs; ordinary record updates belong to the task's workflow.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-database-designer/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture",
+      "name": "notion:notion-knowledge-capture",
+      "description": "Captures conversations and supplied notes as Notion wiki pages, how-to guides, FAQs, decision records, or retrospectives. Use when saving or updating durable knowledge from existing context; use research-documentation when new source discovery and synthesis is the main task.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence",
+      "name": "notion:notion-meeting-intelligence",
+      "description": "Prepares Notion meeting agendas, pre-reads, decision briefs, and follow-up actions. Use for meeting preparation, carrying context into recurring meetings, or turning meeting outcomes into next steps. Simple meeting lookups or saving notes verbatim do not need this workflow.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-organize-my-semester",
+      "name": "notion:notion-organize-my-semester",
+      "description": "Organize a semester in Notion from course notes, syllabi, assignments, and chat context. Use when getting organized for a course or semester to keep notes clear and upcoming work easy to find.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-organize-my-semester/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-plan-marketing-campaigns",
+      "name": "notion:notion-plan-marketing-campaigns",
+      "description": "Organize campaign briefs, content ideas, and production work in Notion. Use when planning a marketing campaign, building a content calendar, or tracking content production.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-plan-marketing-campaigns/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation",
+      "name": "notion:notion-research-documentation",
+      "description": "Synthesizes Notion workspace evidence into cited answers, comparisons, briefs, or reports. Use to investigate a question, connect findings across sources, or reconcile conflicting information, with external research when useful. Simple lookups, fetching a known page, or summarizing one supplied page do not need this workflow.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-set-up-my-project",
+      "name": "notion:notion-set-up-my-project",
+      "description": "Create a useful initial Notion project home with tasks, docs, and meeting notes, then work with the user to confirm the team and choose a Projects database. Use when starting or organizing a project in Notion; routine task edits, status reports, and implementing a technical spec are separate workflows.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-set-up-my-project/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-setup",
+      "name": "notion:notion-setup",
+      "description": "Set up Notion so your agents can remember your preferences, find your work, and pick up where you left off.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-setup/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation",
+      "name": "notion:notion-spec-to-implementation",
+      "description": "Converts Notion product or technical specs into implementation plans, linked tasks, and evidence-based progress updates. Use for planning or implementing a spec, creating tasks from requirements, or reconciling implementation with spec changes.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-weekly-project-digest",
+      "name": "notion:notion-weekly-project-digest",
+      "description": "Produces evidence-based weekly project or team updates by comparing reporting periods, tasks, decisions, and blockers in Notion. Use for recurring status digests; use spec-to-implementation for requirement-level implementation tracking.",
+      "main_resource": "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-weekly-project-digest/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_51c1ba70f47481919149861084681943/control-browser",
+      "name": "browser:control-browser",
+      "description": "Read tabs in Chat mode or control the user's connected local browser in Work mode through the ChatGPT browser extension for navigation, page inspection, and UI actions. Prefer purpose-built connectors, APIs, or CLIs when available.",
+      "main_resource": "skill://plugin_connector_1p_51c1ba70f47481919149861084681943/control-browser/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites",
+      "name": "sites:sites",
+      "description": "Use Sites when the user wants a website built for them (including a landing page, portfolio, dashboard, portal, tracker, hub, game, event registration, or tool), requests changes to a website already built with Sites, wants to publish a website with Sites, or wants to manage Sites hosting.",
+      "main_resource": "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites-remix",
+      "name": "sites:sites-remix",
+      "description": "Remix a Site built with the Sites plugin into a new Site. Use when the user has identified the source Site and asks to remix it.",
+      "main_resource": "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites-remix/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-docs",
+      "name": "google-drive:google-docs",
+      "description": "Create and edit native Google Docs through connected tools.",
+      "main_resource": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-docs/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-drive",
+      "name": "google-drive:google-drive",
+      "description": "Use connected Google Drive as the single entrypoint for Drive, Docs, Sheets, and Slides work. Use when the user wants to find, fetch, organize, share, export, copy, or delete Drive files, or summarize and edit Google Docs, Google Sheets, and Google Slides through one unified Google Drive plugin.",
+      "main_resource": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-drive/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-drive-comments",
+      "name": "google-drive:google-drive-comments",
+      "description": "Write, reply to, and resolve Google Drive comments on Docs, Sheets, Slides, and Drive files with evidence-backed location context. Use when the user asks to leave comments, review a file with comments, respond to comment threads, or resolve Drive comments.",
+      "main_resource": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-drive-comments/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets",
+      "name": "google-drive:google-sheets",
+      "description": "Analyze and edit connected Google Sheets with range precision. Use when the user wants to create Google Sheets, find a spreadsheet, inspect tabs or ranges, search rows, plan formulas, create or repair charts, clean or restructure tables, write concise summaries, or make explicit cell-range updates.",
+      "main_resource": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-slides",
+      "name": "google-drive:google-slides",
+      "description": "Route Google Slides authoring requests and derive a design system from a native template or reference deck. Use this skill when the user provides an existing native Google Slides deck as a template, reference, or prior-period source, or asks to edit, update, repair, restyle, or clean up an existing native Google Slides deck. Use the Presentations skill instead for net-new presentation creation when no existing native Google Slides deck must be followed.",
+      "main_resource": "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-slides/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_b3438d6beb9081918fba3625bc988128/plugin-management",
+      "name": "plugin-management:plugin-management",
+      "description": "Discover and suggest relevant plugins, inspect app permissions and dependencies, and manage plugin connections or removal. Use when the user asks about plugins or when a task would materially benefit from an external app, account, service, or data source that available tools cannot access.",
+      "main_resource": "skill://plugin_connector_1p_b3438d6beb9081918fba3625bc988128/plugin-management/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/create-pet",
+      "name": "work-pets:create-pet",
+      "description": "Create, repair, validate, preview, upload, or activate an animated v2 pet in ChatGPT Work mode from a character idea, brand cue, or reference image. Use for new ChatGPT Pets, custom mascots, non-pixel styles, and unattached sprite sheets requiring nine animation states plus sixteen look directions. Preserve Library artifacts and Pets MCP lifecycle behavior. Exclude real pets, standalone images, and other-app pets; clarify before invoking.",
+      "main_resource": "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/create-pet/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/pets",
+      "name": "work-pets:pets",
+      "description": "List, inspect, select, download, or delete animated pets in ChatGPT Work mode. Use for an explicit pet in ChatGPT or established ChatGPT Pets context. Exclude real-world and other-app pets; clarify before invoking.",
+      "main_resource": "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/pets/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/update-pet",
+      "name": "work-pets:update-pet",
+      "description": "Inspect, validate, preview, repair, or update a custom pet in ChatGPT Work mode, including its name, description, or sprite sheet. Use for a pet in ChatGPT or established ChatGPT Pets context. Exclude real-world and other-app pets; clarify before invoking.",
+      "main_resource": "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/update-pet/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_c5b7d5df5d7081918f2c4be5a633ed5d/cloud-environment-runtime",
+      "name": "cloud-environment:cloud-environment-runtime",
+      "description": "Read at the start of work in a managed cloud environment. Inspect network policy and configured credentials; build and run Docker containers with the session proxy and CA trust; use Tailscale VPN access, configure TCP forwarding, and diagnose access failures.",
+      "main_resource": "skill://plugin_connector_1p_c5b7d5df5d7081918f2c4be5a633ed5d/cloud-environment-runtime/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/create-plugin",
+      "name": "plugin-creator:create-plugin",
+      "description": "Create local or cloud plugins. Use when the user asks to build an app, tool, integration, or plugin within ChatGPT or Codex, not a standalone skill. Covers custom MCP apps, skills bundled in plugins, tools that connect agents to websites and services, and extensions for custom app views, file handling, and referencing app data in chat.",
+      "main_resource": "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/create-plugin/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/prepare-plugin-submission",
+      "name": "plugin-creator:prepare-plugin-submission",
+      "description": "Guide a user through preparing an existing plugin for public submission, including review and publication metadata, listing, examples, demo, and reviewer access. Use when the user wants to get ready to submit, create a submission-ready ZIP, submit, or publicly release a plugin.",
+      "main_resource": "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/prepare-plugin-submission/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/update-plugin",
+      "name": "plugin-creator:update-plugin",
+      "description": "Inspect, edit, or extend custom plugins the user owns or has permission to edit. Use when the user asks to change a plugin's instructions, skills, tools, app UI, Extensions, metadata, assets, or configuration, delete packaged files, or inspect a previous version.",
+      "main_resource": "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/update-plugin/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/clip-breakdown",
+      "name": "thai-work-kit:clip-breakdown",
+      "description": "ใช้เมื่อขอแกะคลิป วิเคราะห์ฮุก โครงเรื่อง หรือเทียบคลิปวิเคราะห์กับต้นฉบับจากลิงก์ TikTok/Reels/Shorts หรือไฟล์จริง ตรวจเครื่องมือและหลักฐานก่อนสรุป แยกการอ่านซับออกจากการดูภาพและฟังเสียง",
+      "main_resource": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/clip-breakdown/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/cross-chat-handoff",
+      "name": "thai-work-kit:cross-chat-handoff",
+      "description": "ใช้เมื่อต้องพักหรือรับช่วงงานไทบ้านคุณภาพในแชตใหม่ โดยยึดหน้าแผนหลักใน Notion รักษารหัสงานและคลิป พร้อมระบุไฟล์และการเข้าถึงที่ยังต้องมี ไม่อ้างว่าความจำตามไปอัตโนมัติ",
+      "main_resource": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/cross-chat-handoff/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill",
+      "name": "thai-work-kit:ffmpeg-skill",
+      "description": "ใช้เมื่อลงมือตัดต่อไฟล์วิดีโอหรือเสียงของไทบ้านคุณภาพ: ตัดและต่อช็อต ตัดช่วงเงียบ B-roll แบ่งจอ ใส่ซับ ตัวหนังสือเคลื่อนไหว ปรับเสียง และส่งออก MP4 มีสคริปต์ FFmpeg แนบ ต้องรันและตรวจไฟล์จริงก่อนบอกว่างานเสร็จ",
+      "main_resource": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/plan-work",
+      "name": "thai-work-kit:plan-work",
+      "description": "ใช้เมื่อวางแผนงานรายวันหรือรายสัปดาห์ของไทบ้านคุณภาพ จัดลำดับงานผลิตคลิป ติดตามงานใน Notion หรือเปรียบเทียบทางเลือกที่มีผลต่อเวลาและงบ โดยใช้ข้อมูลจริงและเลือกเฉพาะงานที่พร้อมทำ",
+      "main_resource": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/plan-work/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/quality-check",
+      "name": "thai-work-kit:quality-check",
+      "description": "ใช้เมื่อตรวจคลิป สคริปต์ แคปชัน หรือความพร้อมก่อนเผยแพร่ของไทบ้านคุณภาพ รวมถึงตรวจหลักฐานบัญชีและสิทธิ์ Affiliate เมื่อเกี่ยวข้อง โดยแยกสิ่งที่ตรวจจริงกับสิ่งที่ยังขาด",
+      "main_resource": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/quality-check/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/summarize-evidence",
+      "name": "thai-work-kit:summarize-evidence",
+      "description": "ใช้เมื่อสรุปผลคลิป ยอดดู เวลาดู ต้นทุน และรายได้ Affiliate ของไทบ้านคุณภาพจากข้อมูลจริง หรือทบทวนผลรายสัปดาห์เพื่อเลือกเรื่องถัดไป ไม่ประมาณยอดแทนข้อมูลที่ขาด",
+      "main_resource": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/summarize-evidence/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/thai-captions",
+      "name": "thai-work-kit:thai-captions",
+      "description": "ใช้เมื่อถอดเสียง ทำซับไทย SRT หรือคำพร้อมเวลาให้คลิปไทบ้านคุณภาพ และเตรียมจุดตัดเอ่อ/อ่า ใช้ faster-whisper ในเครื่องร่วมกับ PyThaiNLP ไม่แต่งคำพูด ไม่อ้างว่าหลบหน้าอัตโนมัติ",
+      "main_resource": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/thai-captions/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/watch",
+      "name": "thai-work-kit:watch",
+      "description": "ใช้เมื่อเบนส่งฟุตเทจไทบ้านคุณภาพแล้วต้องการดูว่ามีอะไร คัดช็อต หรือหาจุดที่ต้องถ่ายเพิ่มก่อนตัดต่อ ดึงภาพพร้อมเวลาจากไฟล์จริงด้วยสคริปต์ในเครื่อง และดูภาพจริงก่อนสรุป ไม่ใช่การดูทุกเฟรมหรือฟังเสียงทั้งคลิป",
+      "main_resource": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/watch/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/write-and-revise",
+      "name": "thai-work-kit:write-and-revise",
+      "description": "ใช้เมื่อทำสคริปต์คลิปสั้น Vlog คำพากย์ แคปชัน รายการช็อต หรือลำดับตัดต่อ CapCut สำหรับไทบ้านคุณภาพ โดยอิงเหตุการณ์และฟุตเทจจริง ไม่อ้างว่าได้วิดีโอสำเร็จจากการเขียนแผน",
+      "main_resource": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/write-and-revise/SKILL.md"
+    },
+    {
+      "authority": {
+        "kind": "cloud"
+      },
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "name": "diagram-design",
+      "description": "Create branded architecture, architecture delta, IT current-state, flowchart, sequence, state machine, ER/data model, timeline, swimlane, quadrant, radar/spider, polar chart (polar/radial lollipop), loop/flywheel, nested, tree, org chart, layer stack, exploded axonometric, axonometric plan, Venn, pyramid/funnel, treemap and marimekko, heatmap, bar and dumbbell, waterfall, line (slopegraph, ridgeline, streamgraph, bump), Gantt and scatter charts (bubble, beeswarm, box plot), high-level, process, medallion, data flow, DP integration, DP security matrix, Sankey, fishbone, Wardley map, kanban, user journey, service blueprint, deployment, dependency graph, UML class, story map, or database schema diagrams as HTML/SVG/PNG, with .drawio, Mermaid, and .excalidraw import, plus lifecycle phase maps, block decomposition trees, and onboarding guidance.",
+      "main_resource": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/SKILL.md"
+    }
+  ],
+  "unreadable_skill_resources": [
+    {
+      "uri": "skill://references/sprite-sheet-contract.md",
+      "package": "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/create-pet",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/upload-session.md",
+      "package": "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/create-pet",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/update-plugin/references/account-updates.md",
+      "package": "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/update-plugin",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/central-knowledge.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/clip-breakdown",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/chat-execution.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/clip-breakdown",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/clip-storytelling-case.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/clip-breakdown",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/story-driven-editing.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/clip-breakdown",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/ben-working-standard.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/cross-chat-handoff",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/thaiban-project.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/cross-chat-handoff",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill/LICENSE",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/video-runtime-setup.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill/references/gotchas.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/iphone-quickstart.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill/references/flags.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/audio-cleanup.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://references/remotion-motion.md",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/watch/LICENSE",
+      "package": "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/watch",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/style-guide.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/animation.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-sequence.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-state.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-er.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-swimlane.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-polar.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-org-chart.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-layers.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-exploded.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-venn.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-pyramid.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-line.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-gantt.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-scatter.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-high-level.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-data-flow.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-dp-integration.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-dp-security-matrix.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-sankey.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-fishbone.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-kanban.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-journey.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-deployment.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-dependency.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-uml-class.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-story-map.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-db-schema.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/output-spec.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/primitive-annotation.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/primitive-sketchy.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/primitive-icons.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/assets/icons.html",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/primitive-terminal.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/primitives-core.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/layout-budget.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/assets/template-motion.html",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/assets/template.html",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/assets/template-dark.html",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/assets/template-full.html",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/assets/template-terminal.html",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/import-drawio.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/import-mermaid.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/import-excalidraw.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/export.md",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/scripts/export_svg.py",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    },
+    {
+      "uri": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/scripts/export_png.py",
+      "package": "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design",
+      "error": "failed to read skill resource"
+    }
+  ],
+  "exported_resources": [
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-build-my-engineering-wiki/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-create-my-team-handbook/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-database-designer/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-organize-my-semester/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-plan-marketing-campaigns/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-set-up-my-project/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-setup/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-weekly-project-digest/SKILL.md",
+    "skill://plugin_connector_1p_51c1ba70f47481919149861084681943/control-browser/SKILL.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/SKILL.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites-remix/SKILL.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-docs/SKILL.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-drive/SKILL.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-drive-comments/SKILL.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/SKILL.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-slides/SKILL.md",
+    "skill://plugin_connector_1p_b3438d6beb9081918fba3625bc988128/plugin-management/SKILL.md",
+    "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/create-pet/SKILL.md",
+    "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/pets/SKILL.md",
+    "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/update-pet/SKILL.md",
+    "skill://plugin_connector_1p_c5b7d5df5d7081918f2c4be5a633ed5d/cloud-environment-runtime/SKILL.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/create-plugin/SKILL.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/prepare-plugin-submission/SKILL.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/update-plugin/SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/clip-breakdown/SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/cross-chat-handoff/SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill/SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/plan-work/SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/quality-check/SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/summarize-evidence/SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/thai-captions/SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/watch/SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/write-and-revise/SKILL.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/SKILL.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-build-my-engineering-wiki/reference/design.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-build-my-engineering-wiki/examples/webhook-release.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-build-my-engineering-wiki/reference/release-overview-layout.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-create-my-team-handbook/reference/design.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-create-my-team-handbook/reference/handbook-layout.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-create-my-team-handbook/examples/studio-handbook.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-database-designer/reference/schema-migrations.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-database-designer/examples/customer-requests.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-database-designer/examples/support-triage.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/reference/database-best-practices.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/reference/documentation-database.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/reference/decision-log-database.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/reference/faq-database.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/reference/team-wiki-database.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/reference/how-to-guide-database.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/reference/learning-database.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/examples/conversation-to-faq.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/examples/decision-capture.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-knowledge-capture/examples/how-to-guide.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/reference/meeting-to-actions.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/reference/decision-meeting-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/reference/status-update-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/reference/brainstorming-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/reference/sprint-planning-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/reference/retrospective-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/reference/one-on-one-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/examples/project-decision.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/examples/sprint-planning.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/examples/executive-review.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-meeting-intelligence/examples/customer-meeting.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-organize-my-semester/reference/design.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-organize-my-semester/reference/study-desk-layout.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-organize-my-semester/examples/fall-semester.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-plan-marketing-campaigns/reference/design.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-plan-marketing-campaigns/reference/content-calendar-reference.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-plan-marketing-campaigns/reference/campaign-layout.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/reference/quick-brief-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/reference/research-summary-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/reference/comparison-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/reference/comprehensive-report-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/reference/customer-feedback.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/reference/advanced-search.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/reference/citations.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/reference/format-selection-guide.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/examples/market-research.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/examples/technical-investigation.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/examples/competitor-analysis.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-research-documentation/examples/trip-planning.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-set-up-my-project/examples/self-serve-onboarding.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-set-up-my-project/reference/design.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-set-up-my-project/reference/meetings.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-set-up-my-project/reference/project-home-layout.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/reference/spec-parsing.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/reference/quick-implementation-plan.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/reference/standard-implementation-plan.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/reference/task-creation.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/reference/task-creation-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/reference/progress-tracking.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/reference/progress-update-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/reference/milestone-summary-template.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/examples/api-feature.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/examples/ui-component.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-spec-to-implementation/examples/database-migration.md",
+    "skill://plugin_asdk_app_69c18c28f1188191bf5b8445c4ab0a2e/notion-weekly-project-digest/examples/mixed-evidence.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/templates/worker-esm-starter/README.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/troubleshooting.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/app-integrations.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/preview/managed.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/preview/local.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/storage.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/site-mcp-server.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/design/presentation-led.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/identity-and-secrets.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/browser-agent-support.md",
+    "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/recurring-updates.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-docs/references/reference-trusted-read-wrapper.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-docs/references/reference-smart-chips-and-building-blocks.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-docs/references/reference-direct-request-composition.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-docs/references/reference-meeting-notes-direct.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/references/style-profiles.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/references/reference-visual-quality.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/references/reference-edit-workflow.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/references/reference-live-read-search-safety.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/references/reference-native-cell-structure.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/references/reference-batch-update-recipes.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/references/reference-import-spreadsheet-to-native-sheets.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/references/reference-formula-patterns.md",
+    "skill://plugin_connector_1p_ab21a553bfbc81919ea8fd1858e3ffa7/google-sheets/references/reference-chart-recipes.md",
+    "skill://plugin_connector_1p_bccf6c8660c08191ae4470d9ae4877fa/create-pet/references/animation-rows.md",
+    "skill://plugin_connector_1p_c5b7d5df5d7081918f2c4be5a633ed5d/cloud-environment-runtime/references/docker.md",
+    "skill://plugin_connector_1p_c5b7d5df5d7081918f2c4be5a633ed5d/cloud-environment-runtime/references/networking.md",
+    "skill://plugin_connector_1p_c5b7d5df5d7081918f2c4be5a633ed5d/cloud-environment-runtime/references/vpn.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/create-plugin/references/sites-mcp.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/create-plugin/references/plugin-packages.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/create-plugin/references/server-access.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/create-plugin/references/local-plugins.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/create-plugin/references/zip-requirements.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/prepare-plugin-submission/references/listing.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/prepare-plugin-submission/references/review-materials.md",
+    "skill://plugin_connector_1p_e1a10c53223481918a42f1510ec46c1e/prepare-plugin-submission/references/submission-lifecycle.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/cross-chat-handoff/references/handoff-template.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill/UPSTREAM-SKILL.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill/references/requests.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill/references/workflow.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/ffmpeg-skill/references/devices.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/plan-work/references/decision-review.md",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/thai-captions/references/thai-fillers.txt",
+    "skill://plugins_6ae6f50b063081918275e04d86a7ca0c/watch/UPSTREAM.json",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/profiles.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/onboarding.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/semantic-patterns.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-architecture.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-architecture-delta.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-it-state.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-flowchart.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-timeline.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-quadrant.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-radar.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-loop.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-nested.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-tree.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-axonometric-plan.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-bar.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-waterfall.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-treemap.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-heatmap.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-process.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-medallion.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-wardley.md",
+    "skill://user/6ae6f37addb08191a668755025de3e8a/diagram-design/references/type-service-blueprint.md"
+  ],
+  "thai_plugin": {
+    "version": "0.7.2",
+    "text_files": [],
+    "binary_files_not_exported": []
+  }
+}

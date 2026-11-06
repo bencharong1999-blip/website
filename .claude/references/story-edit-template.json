@@ -1,0 +1,37 @@
+{
+  "format": "story-edit-plan-v1",
+  "status": "template-not-rendered",
+  "clip_id": null,
+  "brief": {
+    "duration_seconds": null,
+    "tone": null,
+    "viewer_question": null,
+    "payoff_this_episode": null
+  },
+  "source_evidence": [],
+  "beats": [
+    {
+      "beat_id": "B01",
+      "story_function": null,
+      "source_file": null,
+      "source_in_seconds": null,
+      "source_out_seconds": null,
+      "time_verified": false,
+      "speech": null,
+      "proof_visual": null,
+      "audio_decision": null,
+      "on_screen_text": null,
+      "edit_reason": null,
+      "pending_checks": []
+    }
+  ],
+  "edit_decisions": [],
+  "review": {
+    "story": null,
+    "visuals": null,
+    "audio": null,
+    "captions": null,
+    "user_feedback": null
+  },
+  "notes": "Planning template only; not render.py input or native CapCut project. Fill from verified footage; do not invent missing evidence."
+}

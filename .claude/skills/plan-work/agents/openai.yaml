@@ -1,0 +1,7 @@
+interface:
+  display_name: แผนงานไทบ้าน
+  short_description: เลือกงานวันนี้และติดตามงานผลิตคลิปจาก Notion
+  default_prompt: ดูแผนไทบ้านคุณภาพใน Notion แล้วเลือกงานวันนี้ไม่เกิน 3 งานที่พร้อมทำ
+policy:
+  allow_implicit_invocation: true
+  products: [CHAT, CODEX, HERMES]

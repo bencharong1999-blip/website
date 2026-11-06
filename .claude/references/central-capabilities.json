@@ -1,0 +1,103 @@
+{
+  "schema": "ben-capability-index-v1",
+  "as_of": "2026-11-05",
+  "plugin_version": "0.7.2",
+  "notion_main": "https://app.notion.com/p/40b52d4a2f43818d8e8ccf778995100f",
+  "notion_section": "7.8 ข้อมูลกลางทักษะและบทเรียน",
+  "not_live_environment_status": true,
+  "records": [
+    {
+      "skill": "plan-work",
+      "name": "วางแผนและเลือกงาน",
+      "evidence_level": "คู่มือพร้อมใช้",
+      "requires": "บริบทแชตและสถานะ Notion",
+      "application": "อ่านงานค้าง เลือกงานพร้อมทำ ไม่เพิ่มภาระประจำ",
+      "guide": "skills/plan-work/SKILL.md",
+      "limits": "ยังไม่ยืนยันสถานะบัญชีหรือทุกงานจากชื่อในตาราง"
+    },
+    {
+      "skill": "write-and-revise",
+      "name": "บทและ paper edit",
+      "evidence_level": "คู่มือพร้อมใช้",
+      "requires": "เรื่องจริง บรีฟ และหลักฐานฟุตเทจ",
+      "application": "ตั้งคำถามหลัก เชื่อมเหตุผลและผลลัพธ์ รักษาภาษาเบน",
+      "guide": "skills/write-and-revise/SKILL.md",
+      "limits": "บทที่เขียนไม่เท่ากับวิดีโอสำเร็จ"
+    },
+    {
+      "skill": "watch",
+      "name": "คัดภาพพร้อมเวลา",
+      "evidence_level": "มีหลักฐานบันทึกเดิม",
+      "requires": "ไฟล์จริง runtime และ FFmpeg",
+      "application": "คัดช็อตตามหน้าที่ในเรื่องและภาพหลักฐาน",
+      "guide": "skills/watch/SKILL.md",
+      "limits": "ภาพตัวอย่างไม่ยืนยันทุกเฟรมหรือเสียง"
+    },
+    {
+      "skill": "ffmpeg-skill",
+      "name": "ตัดต่อ ภาพแทรก เสียงและ motion",
+      "evidence_level": "มีหลักฐานบันทึกเดิม",
+      "requires": "ไฟล์จริง Python FFmpeg สคริปต์",
+      "application": "แก้ timeline ภาพ เสียง ซับ และส่งโครงการแก้ต่อได้",
+      "guide": "skills/ffmpeg-skill/SKILL.md",
+      "limits": "ตรวจ help/ผลจริง; J/L-cut ในคู่มือใหม่ยังไม่ได้ทดสอบในรอบนี้"
+    },
+    {
+      "skill": "thai-captions",
+      "name": "ถอดเสียงและซับไทย",
+      "evidence_level": "มีหลักฐานบันทึกเดิม",
+      "requires": "เสียงจริง runtime โมเดลและส่วนเสริม",
+      "application": "ตรวจชื่อ คำปฏิเสธและเวลา แล้วจัดซับอ่านได้",
+      "guide": "skills/thai-captions/SKILL.md",
+      "limits": "ASR อาจผิด ไม่ถือว่าฟังหรือทุกคำถูก"
+    },
+    {
+      "skill": "quality-check",
+      "name": "ตรวจงานก่อนส่ง",
+      "evidence_level": "คู่มือพร้อมใช้",
+      "requires": "ฉบับงานที่เปิดตรวจได้",
+      "application": "ตรวจเรื่อง ภาพ เสียง ซับ และความตรงหลักฐาน",
+      "guide": "skills/quality-check/SKILL.md",
+      "limits": "แยกสิ่งที่ตรวจจริง ไม่อ้างทุกเฟรม"
+    },
+    {
+      "skill": "summarize-evidence",
+      "name": "วัดผลและต้นทุน",
+      "evidence_level": "คู่มือพร้อมใช้",
+      "requires": "ตัวเลขและช่วงเวลาจริง",
+      "application": "เปรียบเทียบผลเพื่อนำคำแก้ไปงานรอบถัดไป",
+      "guide": "skills/summarize-evidence/SKILL.md",
+      "limits": "ไม่เติมยอดขาดหรือสรุปเหตุผลจากยอดวิวเดียว"
+    },
+    {
+      "skill": "cross-chat-handoff",
+      "name": "รับช่วงและส่งต่อ",
+      "evidence_level": "คู่มือพร้อมใช้",
+      "requires": "หน้าแผนและแหล่งไฟล์ที่ตรวจได้",
+      "application": "อ่านข้อมูลกลางและทำงานต่อโดยไม่ถามซ้ำ",
+      "guide": "skills/cross-chat-handoff/SKILL.md",
+      "limits": "ต้องตรวจสิทธิ์และไฟล์ในแชตใหม่"
+    },
+    {
+      "skill": "clip-breakdown",
+      "name": "แกะคลิปและเรียนรู้",
+      "evidence_level": "ทดสอบจริงรอบก่อนในแชตนี้",
+      "requires": "เว็บสาธารณะ/ซับ/ภาพหรือไฟล์ที่เข้าถึง",
+      "application": "อ่าน metadata ซับไทยและภาพปกสองคลิป; แปลงบทเรียนเป็นการตัดสินใจตัดต่อ",
+      "guide": "skills/clip-breakdown/SKILL.md",
+      "limits": "ไม่ได้ดูภาพเคลื่อนไหวหรือฟังสองคลิปครบ วิดีโอตอบ 403"
+    }
+  ],
+  "additional_methods": [
+    {
+      "name": "ตัดต่อเล่าเรื่อง",
+      "guide": "references/story-driven-editing.md",
+      "evidence_level": "คู่มือพร้อมใช้; ยังไม่มีผลก่อน/หลังจากงานจริงในรอบนี้"
+    },
+    {
+      "name": "Remotion motion graphics",
+      "guide": "references/remotion-motion.md",
+      "evidence_level": "มีหลักฐานทดสอบเดิมตามทะเบียน; ตรวจ dependencies ใหม่เมื่อใช้งาน"
+    }
+  ]
+}

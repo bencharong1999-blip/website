@@ -1,0 +1,7 @@
+interface:
+  display_name: ผลคลิปและรายได้จริง
+  short_description: วิเคราะห์สถิติ ต้นทุน และ Affiliate โดยไม่เติมยอดสมมติ
+  default_prompt: สรุปผลไทบ้านคุณภาพจากข้อมูลจริง แยกยอดรอยืนยัน เงินรับจริง และสิ่งที่ควรทดลองต่อ
+policy:
+  allow_implicit_invocation: true
+  products: [CHAT, CODEX, HERMES]

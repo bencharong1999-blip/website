@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/kajisho5/ffmpeg-skill",
+  "commit": "1ce2c186bf1dba96132d87274eee46df4f537e0e",
+  "license": "MIT",
+  "vendored": [
+    "scripts/",
+    "references/",
+    "templates/",
+    "LICENSE",
+    "UPSTREAM-SKILL.md",
+    "package.json"
+  ],
+  "modified": "Thai SKILL.md wrapper and agents/openai.yaml; scripts/silence.py keep_ranges merges overlapping kept ranges to align duration/timemap with rendered union. Other upstream code unchanged. package.json keeps only name/version/license/private metadata for version reporting; no npm commands or MCP server registered."
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: สคริปต์และตัดต่อไทบ้าน
+  short_description: เตรียมคำพูด ช็อต แคปชัน และลำดับตัดต่อจากเรื่องจริง
+  default_prompt: ช่วยทำสคริปต์และรายการช็อตคลิปไทบ้านคุณภาพจากเรื่องจริงนี้ พร้อมแนวทางตัดต่อ CapCut
+policy:
+  allow_implicit_invocation: true
+  products: [CHAT, CODEX, HERMES]

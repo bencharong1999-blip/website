@@ -1,0 +1,8 @@
+interface:
+  display_name: "ตรวจฟุตเทจและคัดช็อต"
+  short_description: "ดูภาพพร้อมเวลาจากไฟล์จริงก่อนวางลำดับตัดต่อ"
+  default_prompt: "ใช้ watch ตรวจฟุตเทจนี้ในเครื่อง เปิดดูภาพจริง แล้วคัดช็อตที่ใช้เล่าเรื่องพร้อมเวลาและจุดที่ต้องถ่ายเพิ่ม"
+  brand_color: "#DC2626"
+policy:
+  allow_implicit_invocation: true
+  products: [CHAT, CODEX, HERMES]

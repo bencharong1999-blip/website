@@ -1,0 +1,7 @@
+interface:
+  display_name: "ตัดต่อ MP4 และ Motion"
+  short_description: "ตัดต่อ ใส่ B-roll ซับ และ motion ด้วย FFmpeg จริง"
+  default_prompt: "ตัดต่อฟุตเทจไทบ้านคุณภาพนี้ตามเรื่องจริง ส่ง MP4 พร้อมตรวจภาพ เสียง และระบุสิ่งที่ยังตรวจไม่ได้"
+policy:
+  allow_implicit_invocation: true
+  products: [CHAT, CODEX, HERMES]

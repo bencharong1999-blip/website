@@ -1,0 +1,7 @@
+interface:
+  display_name: ตรวจคลิปและความพร้อม
+  short_description: ตรวจเรื่องจริง ภาพ เสียง ข้อความ และสิทธิ์ที่เกี่ยวข้อง
+  default_prompt: ตรวจคลิปไทบ้านคุณภาพนี้ก่อนโพสต์ บอกจุดต้องแก้และส่วนที่ยังตรวจไม่ได้
+policy:
+  allow_implicit_invocation: true
+  products: [CHAT, CODEX, HERMES]

@@ -1,0 +1,7 @@
+interface:
+  display_name: ส่งต่องานไทบ้าน
+  short_description: เริ่มงานต่อจากหน้าแผน Notion พร้อมรหัสงานและไฟล์
+  default_prompt: สร้างบันทึกส่งต่องานไทบ้านคุณภาพ พร้อมลิงก์ Notion รหัสคลิป สถานะจริง และขั้นตอนถัดไป
+policy:
+  allow_implicit_invocation: true
+  products: [CHAT, CODEX, HERMES]
