@@ -48,3 +48,5 @@
 | 8 วัดผล 48 ชม./7 วัน (baoben-results) | Claude | Notion ส่วน 6 |
 
 กติกาความยาว (ทดลอง จะปรับตามผลจริง): ทุกตอนทำ **60–90 วิ** เล่าจบในตัว (ลงได้ทุกช่องทาง) · ฉบับยาว 2–3 นาทีเฉพาะเรื่องที่เนื้อหาเยอะ · เทียบผล EP2 ฉบับเต็ม 3:05 กับฉบับสั้น 65 วิ ก่อนตัดสินใจ
+
+รูปแบบไฟล์ส่งงานขั้น 2 และ 4 (intake.json / render_job.json / render_result.json): ดู `handoff-json.md` · ผลตรวจเครื่อง Claude 6 พ.ย.: ffmpeg 6.1.1 (libass, arnndn, loudnorm) · render.py + qc.py ผ่านกับไฟล์สังเคราะห์ 2 ช็อต (1080×1920 60fps BT.709 ซับไทยถูก) · asr.py setup โหลดโมเดลจาก GitHub ได้ (90 วิ, 360 MB) · pip ใช้ได้ · huggingface.co และ drive.google.com ถูกบล็อก
