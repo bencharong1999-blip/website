@@ -44,6 +44,7 @@ DEFAULTS = {
     "work_face_px": 160,
     "smooth": {"strength": 0.6, "sigma_color": 22, "sigma_space": 7},
     "face_lift": {"brightness": 0.04, "warmth": 3.0},
+    "slim": {"amount": 0.0, "reach": 0.85},
     "skin": {"cr": [133, 178], "cb": [75, 130], "soft": 8},
     "protect": {"eye_radius": 0.16, "mouth_w": 0.75, "mouth_h": 0.30},
     "grade": "eq=gamma=1.04:contrast=1.02:saturation=1.05",
@@ -164,8 +165,31 @@ def build_mask(roi, face, ox, oy, params):
     return cv2.GaussianBlur(mask, (0, 0), feather)
 
 
+def slim_warp(roi, face, ox, oy, amount, reach):
+    """Narrow the cheeks/jaw horizontally toward the face centre line.
+
+    Inverse map: an output pixel at horizontal distance d from the centre
+    samples the source at d * (1 + amount * w), so content moves inward.
+    w is 1 over the cheek-to-chin band of the face and falls smoothly to 0
+    at the forehead, below the chin and at `reach` face-widths from the
+    centre, so the warp is continuous with the untouched frame.
+    """
+    h, w = roi.shape[:2]
+    x, y, fw, fh = face[:4]
+    cx = x + fw / 2 - ox
+    eye_y = (face[5] + face[7]) / 2 - oy
+    chin_y = y + fh - oy
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    d = xx - cx
+    wy = smoothstep(yy, eye_y - fh * 0.05, eye_y + fh * 0.25) * \
+        (1 - smoothstep(yy, chin_y, chin_y + fh * 0.2))
+    wx = 1 - smoothstep(np.abs(d), fw * 0.45, fw * reach)
+    map_x = (cx + d * (1 + amount * wy * wx)).astype(np.float32)
+    return cv2.remap(roi, map_x, yy, cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
+
+
 def retouch_frame(frame, face, weight, params):
-    """Apply face-only smoothing + lift in place; return (frame, mask or None)."""
+    """Apply face-only smoothing, lift and optional slim in place; return (frame, mask)."""
     if face is None or weight <= 0:
         return frame, None
     H, W = frame.shape[:2]
@@ -190,7 +214,11 @@ def retouch_frame(frame, face, weight, params):
     out += (255.0 - out) * (lift["brightness"] * mask)[..., None]
     out[..., 2] += lift["warmth"] * mask
     out[..., 0] -= lift["warmth"] * mask
-    frame[y0:y1, x0:x1] = np.clip(out, 0, 255).astype(np.uint8)
+    out = np.clip(out, 0, 255).astype(np.uint8)
+    slim = params.get("slim", {})
+    if slim.get("amount", 0) > 0:
+        out = slim_warp(out, face, x0, y0, slim["amount"] * weight, slim.get("reach", 0.85))
+    frame[y0:y1, x0:x1] = out
 
     full = np.zeros((H, W), np.float32)
     full[y0:y1, x0:x1] = mask

@@ -1,7 +1,7 @@
 {
   "kind": "baoben-retouch",
-  "version": 1,
-  "status": "ตัวอย่าง v01 — รอเบนตรวจลุค ยังไม่อนุมัติ",
+  "version": 2,
+  "status": "v02 — เบนขอ (6 พ.ย.): นุ่มขึ้นอีกนิด หน้าสว่างขึ้นอีกหน่อย หน้าดูผอมลงนิดนึง · รอเบนตรวจ",
   "applies_to": "เฉพาะช็อตเบนพูด (IMG_3683_p001–p005 ต้นฉบับ 1080p) ไม่ใช้กับภาพกิจกรรม",
   "retouch": {
     "detect_width": 360,
@@ -9,11 +9,41 @@
     "smooth_alpha": 0.5,
     "hold_seconds": 0.5,
     "work_face_px": 160,
-    "smooth": {"strength": 0.6, "sigma_color": 22, "sigma_space": 7},
-    "face_lift": {"brightness": 0.04, "warmth": 3.0},
-    "skin": {"cr": [133, 178], "cb": [75, 130], "soft": 8},
-    "protect": {"eye_radius": 0.16, "mouth_w": 0.75, "mouth_h": 0.30},
-    "grade": "eq=gamma=1.04:contrast=1.02:saturation=1.05",
-    "x264": ["-preset", "medium", "-crf", "18"]
+    "smooth": {
+      "strength": 0.75,
+      "sigma_color": 22,
+      "sigma_space": 7
+    },
+    "face_lift": {
+      "brightness": 0.055,
+      "warmth": 3.0
+    },
+    "skin": {
+      "cr": [
+        133,
+        178
+      ],
+      "cb": [
+        75,
+        130
+      ],
+      "soft": 8
+    },
+    "protect": {
+      "eye_radius": 0.16,
+      "mouth_w": 0.75,
+      "mouth_h": 0.3
+    },
+    "grade": "eq=gamma=1.05:contrast=1.02:saturation=1.05",
+    "x264": [
+      "-preset",
+      "medium",
+      "-crf",
+      "18"
+    ],
+    "slim": {
+      "amount": 0.05,
+      "reach": 0.8
+    }
   }
 }
