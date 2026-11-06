@@ -83,3 +83,9 @@ description: ตัดต่อคลิปบ่าวเบนด้วย ffm
 - `scripts/fx.py captioned_master.mp4 voice.wav fx.json -o final.mp4`: จอสั่น (`shake`), ซูมกระแทก (`punch`), แฟลชขาว (`flash`), จอดับ (`blackout`), เสียงประกอบสร้างเองด้วย ffmpeg (impact, boom, whoosh, heartbeat, riser) ไม่มีปัญหาลิขสิทธิ์ · qc.py จะเตือน black frames ตรงจอดับที่ตั้งใจ
 - หาเวลาคำแม่น ๆ: ถอดเสียงทีละช่วงสั้นขึ้นเรื่อย ๆ (prefix decode) + ดูช่องเงียบ
 - เพลง: เบนเลือกใส่เพลงในแอป TikTok ตอนโพสต์ (ไม่ใส่เพลงในไฟล์)
+
+## ปรับหน้าเบน (รีทัชเฉพาะผิวหน้า) — ทดสอบ 6 พ.ย. 2026
+
+- `scripts/retouch.py IN OUT --params .claude/baoben/ep03-retouch.json` — หาใบหน้าด้วย OpenCV YuNet (`models/face_detection_yunet_2023mar.onnx`, MIT) → มาสก์ผิวในหน้า (ไม่รวมตา/ปาก) → ทำผิวนุ่มเฉพาะความถี่ต่ำ + หน้าสว่าง/อุ่นเล็กน้อย → เกรดทั้งภาพเบา ๆ ครั้งเดียว
+- ต้อง `pip install opencv-python-headless` · ทดสอบกับ proxy EP03 p001/p004 (หน้าเจอทุกเฟรมยกเว้นจอท้าย CapCut) · 1080p60 ≈ 3.3 เฟรม/วิ บน 4 คอร์
+- ใช้กับช็อตเบนพูดเท่านั้น ไม่ซ้อนกับฟิลเตอร์หน้าอื่น · ไม่ปรับรูปหน้า/ลบสิวเฉพาะจุด/แต่งหน้า · ผลและข้อจำกัดเต็ม: `.claude/baoben/ep03-retouch.md`
